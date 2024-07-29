@@ -1,0 +1,211 @@
+:root {
+    /* Colores Y estilos */
+    --background-color: #131313;
+    --primary-font-color: #ffffff;
+    --secondary-font-color: #bebebe;
+    --bold: bold;
+
+     /* Tipografías */
+    --font-family: helvetica;
+    --font-size-base: 16px;
+    --font-size-l: 1.25rem;
+    --font-size-m: 1rem;
+    --font-size-s: 0.875rem;
+}
+  /* === Reset CSS === */
+
+* {
+    text-decoration: none;
+    font-family: var(--font-family);
+    box-sizing: border-box;
+    padding: 0%;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+header {
+    /* position: fixed; */
+    padding: 0%;
+    box-sizing: border-box;
+    font-size: var(--font-size-base);
+    /* border: 2px solid white; */
+}
+
+header ul {
+    display: flex;
+    margin: 40px 0px 0px 0px;
+    list-style: none;
+    justify-content: space-around;
+    /* align-items: end; */
+    align-items: baseline;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.searchprofilebag {
+    margin-top: 65px;
+    height: 20px;
+    flex-wrap: wrap;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h1, h2, h3, h4, h5, h6, a, label, button {
+    color: var(--primary-font-color);
+}
+
+.menu {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        text-decoration: none;
+        color: var(--primary-color);
+        }
+
+.menu:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: var(--primary-font-color);
+        transition: left 0.8s;
+        }
+
+.menu:hover:after {
+        left: 0;
+        }
+
+.banner {
+    width: 100%;
+    height: 60vh;
+    /* overflow: hidden; */
+    object-fit: cover;
+}
+
+h2 {
+    text-align: center;
+    margin: 40px 0 0 0;
+}
+
+section ul {
+    display: flex;
+    margin: 0 15% 0 15%;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+
+section ul li p {
+    font-size: var(--font-size-s);
+    color: var(--secondary-font-color);
+}
+
+section ul li h3 {
+    font-size: var(--font-size-s);
+}
+
+.soldout {
+    position: relative;
+    bottom: 425px;
+    left: 120px;
+}
+
+.item8 {
+    margin: 21px 0px 0px 0px;
+}
+
+video {
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: end;
+    position: absolute;
+    z-index: 1;
+}
+
+.video div h4 {
+    margin: 0px 0px 20px 0px;
+    color: var(--primary-font-color);
+    font-size: 3.5rem;
+    font-weight: var(--bold);
+}
+
+.video div button {
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px var(--primary-font-color) solid;
+    letter-spacing: 0.25em;
+    font-weight: var(--bold);
+    width: 130px;
+    height: 50px;
+}
+
+footer img {
+    width: 100%;
+    height: 20vh;
+    /* overflow: hidden; */
+    object-fit: cover;
+}
+
+.searchcontact {
+    display: flex;
+    justify-content: space-around
+}
+
+.search {
+    /* margin: 0px 0px 0px 0px; */
+    position: absolute;
+    color: var(--primary-font-color);
+}
+
+.contact {
+    color: var(--primary-font-color);
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: absolute;
+    /* margin: 0px 0px 0px 0px; */
+}
+
+#email {
+    width: 330px;
+    height: 40px;
+    border-top: none;
+    border-right: none;
+    border-bottom: solid 2px var(--primary-font-color);
+    border-left: none;
+    background-color: var(--background-color);
+}
+
+/* ::placeholder {
+    color: red;
+} */
+
+/* #email::placeholder {
+    color: var(--secondary-font-color)
+} */
+
+input[type="email"]::placeholder {
+    color: blue;
+}
