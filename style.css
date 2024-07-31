@@ -1,11 +1,11 @@
 :root {
-    /* Colores Y estilos */
+/* COLORES Y ESTILOS */
     --background-color: #131313;
     --primary-font-color: #ffffff;
     --secondary-font-color: #bebebe;
     --bold: bold;
 
-     /* Tipografías */
+/* TIPOGRAFÍAS */
     --font-family: helvetica;
     --font-size-base: 16px;
     --font-size-l: 1.25rem;
@@ -13,7 +13,7 @@
     --font-size-s: 0.875rem;
     --font-size-xs: 0.50rem;
 }
-  /* === Reset CSS === */
+/* RESET CSS */
 
 * {
     text-decoration: none;
@@ -213,14 +213,13 @@ footer {
     height: 25vh;
 }
 
-.footer {
+footer section {
     display: flex;
     justify-content: space-between;
     justify-content: center;
 }
 
 .search {
-    /* margin: 0px 0% 0px 0px; */
     color: var(--primary-font-color);
     display: flex;
     width: 400px;
@@ -236,7 +235,6 @@ footer {
     position: absolute;
     text-align: justify;
     width: 400px;
-    /* margin: 0px 0px 0px 0px; */
 }
 
 input[type="email"] {
