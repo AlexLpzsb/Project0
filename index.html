@@ -9,8 +9,9 @@
 </head>
     <header>
         <nav>
-        <a href="#"><img class="searchprofilebag" src="./assets/images/search.svg" alt="search"></a>
-        <ul>
+            <ul>
+            <li><a href="#">
+            <img class="searchprofilebag" src="./assets/images/search.svg" alt="search"></a></li>
             <li class="menu"><a href="#">HOME</a></li>
             <li class="menu"><a href="#">SHOP ALL</a></li>
             <li class="menu"><a href="#">TEES</a></li>
@@ -19,17 +20,16 @@
             <li class="menu"><a href="#">CONTACT</a></li>
             <li class="menu"><a href="#">TOUR</a></li>
             <li class="menu"><a href="#">VIDEOS</a></li>
+            <li><a href="#"><img class="searchprofilebag" src="./assets/images/profile.svg" alt="profile"></a></li>
+            <li><a href="#"><img class="searchprofilebag" src="./assets/images/shopping-bag.svg" alt="shopping-bag">
+            </a>
+            </li>
         </ul>
-        <div>
-        <a href="#"><img class="searchprofilebag" src="./assets/images/profile.svg" alt="profile"></a>
-        <a href="#"><img class="searchprofilebag" src="./assets/images/shopping-bag.svg" alt="shopping-bag">
-        </a>
-        </div>
         </nav>
     </header>
     <main>
-    <section>
-        <img class="banner" src="./assets/images/banner.jpg" alt="banner">
+    <section class="banner">
+        <img src="./assets/images/banner.jpg" alt="banner">
     </section>
     <section>
         <h2>FEATURED COLLECTION</h2>
@@ -46,14 +46,14 @@
     </section>
     </main>
     <section class="video">
-    <div>
+        <div>
         <h4>CRYING WHILE YOU'RE DANCING</h4>
         <button><a href="https://youtu.be/hY9TVwgePxU" target="_blank">WATCH</a></button>
     </div>
         <video src="./assets/videos/crying.mp4" muted autoplay loop></video>
     </section>
     <footer>
-        <div class="searchcontact">
+        <section class="footer">
         <div class="search">
             <p>Search</p>
         </div>
@@ -62,9 +62,11 @@
             <p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime-deals.</p>
             <input id="email" type="email" id="email" placeholder="Enter your email">
             <label for="email"></label>
+        </div>
+        <div class="powered">
             <p>POWERED BY ALEX</p>
         </div>
-        </div>
+        </section>
          <img src="./assets/images/background.webp" alt="space">
     </footer>
 </body>
